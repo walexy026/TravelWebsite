@@ -5,20 +5,17 @@
   font-family: "Poppins", sans-serif;
 }
 header {
-    background-image: url(./Assets/HeroBg.svg);
-    background-position-x: right;
-    background-size: cover;
-    background-repeat: no-repeat;
     
   position: static;
   top: 0;
-  z-index: 1;
+  /* z-index: 1; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 2em;
 }
 ul {
+    z-index: 100;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -41,6 +38,27 @@ a {
 select {
   border: none;
 }
-.heroSection{
-    
+/* .heroSection{ */
+    /* background-image: url(./Assets/HeroBg.svg);
+    background-position-x: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 500px; */
+   
+/* } */
+.heroSubOne img{
+    position: fixed;
+    right: -150px;
+    z-index: -1;
+    top: 0;
+    transform: rotateY(45deg);
+/* width: auto; */
+/* height: auto; */
+}
+@media screen and (min-width:1400px){
+    .heroSubOne img{
+    transform: rotateY(0deg);
+    /* display: none; */
+
+    }
 }
