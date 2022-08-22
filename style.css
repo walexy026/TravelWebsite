@@ -362,3 +362,37 @@ aside{
   align-items: center;
   padding-left: 3rem;
 }
+/* .sketches img{
+  position: absolute;
+} */
+.stepsToBook{
+
+}
+.stepsToBook h6{
+  color: #5E6282;
+  font-weight: 600;
+  padding-bottom: 0.7rem;
+}
+.stepsToBook h2{
+  color: #14183E;
+  font-size: 36px;
+    width: 371px;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+.steps{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.steps p{
+  font-size: 10px;
+  width: 225px;
+  color: #5E6282;
+  font-weight: 400;
+}
+.steps h6{
+  color: #5E6282;
+  font-weight: 700;
+}
