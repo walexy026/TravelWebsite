@@ -7,13 +7,15 @@ const navAnimate = document.querySelectorAll('navLinks li')
 hamburger.addEventListener('click', () => {
     navLink.classList.toggle('NavActive')
     hamburger.classList.toggle('toggle')
-    navAnimate.forEach((link, index) => {
-        if (link.style.animation){
-            link.style.animation = " ";
-        }else{
-            link.style.animation = `navlinksId 0.5s ease forwards ${index / 7 + 2}s` 
-        }
-    });
+//   TRYING TO WORK ON THE LINKS TO ANIMATE
+    // navAnimate.forEach((link, index) => {
+    //     if (link.style.animation){
+    //         link.style.animation = " ";
+    //     }else{
+    //         link.style.animation = `navlinksId 0.5s ease forwards ${index / 7 + 2}s` 
+    //     }
+    // });
+    // END
 })   
 
 }
