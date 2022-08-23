@@ -270,6 +270,12 @@ aside span {
   .tripToRome{
     transform: translate(150px,-150px)!important;
   }
+  .testimonial{
+    flex-direction: column;
+  }
+  .testimonies h2{
+    width: 95% !important;
+  }
 }
 .NavActive {
   transform: translateX(0%);
@@ -504,4 +510,60 @@ aside span {
   transform: translate(140px, -470px);
   filter: blur(50px);
   z-index: -1;
+}
+.testimonial{
+  display: flex;
+  justify-content: space-around;
+  padding-left: 2rem;
+
+}
+.testimonies h5{
+  color: #5E6282;
+}
+.testimonies h2{
+  color: #14183E;
+  font-size: 32px;
+  padding-bottom: 3rem;
+  width: 70%;
+}
+.carouselDot{
+  height: 7px;
+  width: 7px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #39425D;
+  margin-left: 7px
+}
+/* .carouselDot .active{
+  height: 7px;
+  width: 7px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  display: inline-block;
+} */
+/* .carouselDot .inactive{
+  background-color: #E5E5E5;
+  height: 7px;
+  width: 7px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.carouselDot .inactive{
+  background-color: #E5E5E5;
+  height: 7px;
+  width: 7px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  display: inline-block;
+} */
+.carouselTestimony {
+  width: 300px;
+  font-size: 12px;
+  background: #FFFFFF;
+box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+.arrow{
+  display: flex;
 }
