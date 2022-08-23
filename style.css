@@ -11,6 +11,9 @@ a {
   cursor: pointer;
   /* transition: all 0.5s ease-in-out; */
 }
+h1{
+  font-family: 'Volkhov', serif;
+}
 header {
   display: flex;
   justify-content: space-around;
@@ -581,4 +584,45 @@ border-radius: 10px;
 background-color: #59b1e6;
 /* height: 130px; */
 /* display: none; */
+}
+
+.subscribe{
+background: #DFD7F9;
+opacity: 0.7;
+border-radius: 129px 20px 20px 20px ;
+text-align: center;
+margin: 0 6rem;
+/* height: 200px; */
+/* height: 407px; */
+/* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+.subscribe h3{
+  color: #5E6282;
+  text-align: center;
+  padding-top: 3rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  opacity: 1;
+  padding-bottom: 3rem;
+}
+.subscribe a img{
+  position: absolute;
+  right: 75px;
+}
+.subscribe form{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+input[type=email]{
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+}
+
+input[type=submit]{
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+  border-radius: 10px;
+  padding: 0.5rem;
+  border: none;
 }
