@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* body{
+    background-image: url(./assets/formBg.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+   background-clip: content-box;
+    background-size: 65vw;
+} */
+.formBg img{
+    position: absolute;
+    right: 0;
+    top: -20px;
+    border-bottom-left-radius: 30%;
+    z-index: -1;
+}
