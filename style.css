@@ -294,6 +294,14 @@ box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
   .partners{
     flex-direction: column;
   }
+  footer{
+    padding: 0 !important;
+    text-align: center;
+  }
+  .footerLinks{
+    flex-direction: column;
+    /* padding: 0 !important; */
+  }
 }
 .NavActive {
   transform: translateX(0%);
@@ -637,4 +645,55 @@ input[type=submit]{
   border-radius: 10px;
   padding: 0.5rem;
   border: none;
+}
+footer{
+  padding: 0 5rem;
+  /* text-align: center; */
+}
+.footerLinks{
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.footerLinks p{
+  font-size: 13px;
+  color: #5E6282;
+  width: 190px;
+}
+.links ul{
+  display: flex;
+  flex-direction: column;
+  /* display: none; */
+}
+.links ul li:nth-child(1){
+  /* display: none; */
+  color: #080809;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.links ul li {
+  color: #5E6282;
+  font-weight: 500;
+  /* display: none; */
+}
+
+.fa-instagram{
+  background: conic-gradient(from 180deg at 50% 50%, #B8D2F1 0deg, #F289AA 60deg, #C68BF0 106.09deg, #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg, #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg, #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
+  padding: 1rem;
+  color: #ffffff;
+  border-radius: 50%;
+}
+.social{
+  display: flex;
+  align-items: center;
+}
+.playStore{
+  padding-top: 1rem;
+  display: flex;
+}
+footer span{
+  text-align: center;
+  display: block;
+  padding-top: 2rem;
 }
