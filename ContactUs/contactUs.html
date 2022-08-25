@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&family=Lato:wght@400;700&family=Lexend+Deca&family=Volkhov:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&family=Lato:wght@400;700&family=Lexend+Deca&family=Poppins:ital,wght@0,400;0,600;0,700;1,500&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          rel="shortcut icon"
-          href="/Assets/JaddoLogo.svg"
-          type="image/x-icon"
-        />
-        <link rel="stylesheet" href="./contactUs.css" />
-        <title>Contact Us</title>
-      </head>
-<body>
-    <div class="formBg"><img src="./assets/formBg.svg" alt=""></div>
-    <form action="" target="_self" >
-        <h3>Contact us</h3>
-        <p>For further questions, including partnership opportunities, please email hello@creative-
-            tim.com or contact using our contact form.</p>
-            <div class="flName">
-          <div>
-                  <label for="FullName"> Full Name</label> <br> 
-                  <input type="text" name="Full Name" id="FullName" placeholder="Full Name">
-                </div>
-                <div>
-                    <label for="Email">Email</label> <br>
-                    <input type="email" name="Email" id="Email" placeholder="hello@creative-tim.com">
-                </div>
-            </div>
-                <div>
-                <label for="">How can we help you?</label><br>
-                <textarea name="" id="" cols="50" rows="5">Describe your problem in at least 250 characters</textarea>
-            </div>
-            <input type="submit" value="SEND MESSAGE">
-            </form>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&family=Lato:wght@400;700&family=Lexend+Deca&family=Open+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="/Assets/JaddoLogo.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./contactUs.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div class="formBg"><img src="./assets/formBg.svg" alt="" /></div>
+    <form action="" target="_self" id="form">
+      <h3>Contact us</h3>
+      <p>
+        For further questions, including partnership opportunities, please email
+        hello@creative- tim.com or contact using our contact form.
+      </p>
+      <div class="flName">
+        <!-- /** 
+        *! nncnnbzxn  
+         **/     -->
+        <div>
+          <label for="FullName"> Full Name</label> <br />
+          <input
+            type="text"
+            name="Full Name"
+            id="FullName"
+            placeholder="Full Name"
+          />
+          <br>
+          <span id="errorName"></span>
+        </div> 
+        <div>
+          <label for="Email">Email</label> <br />
+          <input
+            type="email"
+            name="Email"
+            id="Email"
+            placeholder="hello@creative-tim.com"
+          /> <br>
+          <span id="errorEmail"></span>
+        </div>
+      </div>
+      <div>
+        <label for="">How can we help you?</label><br />
+        <textarea name="textarea" id="textarea" cols="50" rows="5" placeholder="Describe your problem in at least 250 characters">
+</textarea
+        > <br>
+        <span id="errorTextArea"></span>
+      </div>
+      <input type="submit" value="SEND MESSAGE" id="submit"/>
+      <span id="errorSubmit"></span>
+    </form>
+    <script src="/ContactUs/contactUs.js"></script>
+  </body>
 </html>
