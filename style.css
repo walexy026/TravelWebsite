@@ -43,6 +43,7 @@ li:nth-child(6) {
   background-color: transparent;
 }
 li a {
+  font-family: 'Open Sans', sans-serif;
   color: #212832;
   text-decoration: none;
   font-size: 13px;
@@ -192,6 +193,8 @@ aside {
   padding: 10px;
   border: none;
   margin-right: 1rem;
+  font-family: 'Open Sans', sans-serif;
+
 }
 aside div {
   color: #686d77;
@@ -324,6 +327,7 @@ box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
   text-align: center;
   color: #14183e;
   font-weight: 700;
+  font-family: 'Volkhov', serif;
 }
 .servicesLists {
   display: flex;
@@ -354,6 +358,7 @@ box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
 .servicesRendered h6 {
   color: #1e1d4c;
   padding-bottom: 1rem;
+  font-family: 'Open Sans', sans-serif;
 }
 .servicesRendered p {
   color: #5e6282;
@@ -374,6 +379,7 @@ box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
   color: #14183e;
   padding-bottom: 1rem;
   font-weight: 700;
+  font-family: 'Volkhov', serif;
 }
 .destinationCities {
   display: flex;
@@ -422,6 +428,8 @@ box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
   width: 371px;
   font-weight: 700;
   padding-bottom: 1rem;
+  font-family: 'Volkhov', serif;
+
 }
 .steps {
   display: flex;
@@ -550,6 +558,8 @@ box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
   font-size: 32px;
   padding-bottom: 3rem;
   width: 70%;
+  font-family: 'Volkhov', serif;
+
 }
 .carouselDot{
   height: 7px;
@@ -648,13 +658,21 @@ input[type=submit]{
 }
 footer{
   padding: 0 5rem;
-  /* text-align: center; */
+  
 }
 .footerLinks{
   padding-top: 2rem;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  /* align-items: flex-start; */
+}
+.footerlogo h2{
+  font-weight: 100;
+  /* font-size: 62px; */
+
+
 }
 .footerLinks p{
   font-size: 13px;
