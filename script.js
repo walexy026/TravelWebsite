@@ -21,6 +21,14 @@ hamburger.addEventListener('click', () => {
 }
  navToggle()
 
+ let boxHover = document.querySelector('.box')
+ let serviceRendered = document.getElementsByClassName('servicesRendered')
+ console.log(serviceRendered)
+ serviceRendered.style.backgroundColor = 'red'
+  
+ 
+//  boxHover.style.opacity = '0.5'
+
 // const any = 1
 // console.log(any)
 

@@ -34,7 +34,7 @@ let form = idGroup('form'),
 // errorTextArea.innerHTML = 'Text cannot be blank'
 // }
 // })
-fullName.addEventListener('keyup',() =>{
+let fName = fullName.addEventListener('keyup',() =>{
     let fullName = document.getElementById('FullName').value;    
     if (fullName.length ==   0){
         errorName.innerHTML = 'name cannot be empty'
@@ -48,7 +48,7 @@ fullName.addEventListener('keyup',() =>{
     return true
     
 } )
-Email.addEventListener('keyup',() =>{
+let mail = Email.addEventListener('keyup',() =>{
         let Email = document.getElementById('Email').value;
            
            if (Email.length == 0){
@@ -62,7 +62,7 @@ Email.addEventListener('keyup',() =>{
                errorEmail.innerHTML = 'correct';
                return true
  })
-textArea.addEventListener('keyup',() =>{
+let textContent = textArea.addEventListener('keyup',() =>{
         let textArea = document.getElementById('textarea').value;
         let required = 250;
         let left = required - textArea.length;
@@ -77,7 +77,7 @@ textArea.addEventListener('keyup',() =>{
         
  submitButton.addEventListener('click', () =>{
     let submitButton = document.getElementById('submit')
-    if(!fullName || !Email || !textArea ){
+    if(!fName || !mail || !textContent ){
         errorSubmit.innerHTML ='Please fix error to submit';
         return false;
     }

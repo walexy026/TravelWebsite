@@ -293,6 +293,7 @@ box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
   }
   .servicesLists {
     flex-direction: column;
+    gap: 3rem;
   }
   
   .destinationCities {
@@ -663,7 +664,7 @@ margin: 0 6rem;
   padding-bottom: 2rem;
 }
 input[type=email]{
-  padding: 0.5rem;
+  padding: 0.5rem 1.9rem;
   border-radius: 10px;
   border: none;
 }
@@ -672,8 +673,24 @@ input[type=submit]{
   color: #FFFFFF;
   background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
   border-radius: 10px;
-  padding: 0.5rem;
+  padding: 0.5rem ;
   border: none;
+  
+}
+form img{
+  transform: translate(5px, 9px);
+  position: absolute;
+}
+
+.ecilpse1 img{
+  position: absolute;
+    right: 99px;
+    transform: translateY(-114px);
+}
+.ecilpse2 img{
+  position: absolute;
+    left: 94px;
+    transform: translateY(-79px);
 }
 .littlestars img{
 position: absolute;
