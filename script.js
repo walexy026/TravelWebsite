@@ -21,11 +21,20 @@ hamburger.addEventListener('click', () => {
 }
  navToggle()
 
- let boxHover = document.querySelector('.box')
- let serviceRendered = document.getElementsByClassName('servicesRendered')
- console.log(serviceRendered)
- serviceRendered.style.backgroundColor = 'red'
-  
+ let boxHover = document.querySelectorAll('.box')
+ let serviceRendered = document.querySelectorAll('.servicesRendered')
+
+//   looping through each card
+ for( let i = 0; i < serviceRendered.length; i++) {
+
+    serviceRendered[i].addEventListener('mouseover', () => {
+        boxHover[i].style.opacity = '1'
+    })
+
+    serviceRendered[i].addEventListener('mouseleave', () => {
+        boxHover[i].style.opacity = '0'
+    })
+ }
  
 //  boxHover.style.opacity = '0.5'
 

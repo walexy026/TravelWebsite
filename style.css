@@ -154,7 +154,7 @@ select {
   /* line-height: 70px; */
   letter-spacing: -0.04em;
   color: #181e4b;
-  width: 400px;
+  max-width:400px;
 }
 .heroSubOne h1 span::after {
   content: url(/Assets/DecoreH1.svg);
@@ -227,7 +227,7 @@ box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
 
 @media screen and (max-width:500px) {
  .heroSubOne h1{
-  width: 300px !important;
+  /* width: 300px !important; */
  }
  .heroSubOne p{
   width: 300px !important;
@@ -274,7 +274,7 @@ box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
   }
   .heroSubOne h1 {
     font-size: 2.7rem;
-    width: 400px;
+    /* width: 400px; */
     text-align: center;
   }
   .heroSubOne p {
@@ -384,6 +384,26 @@ border-radius: 36px;
   color: #5e6282;
   font-size: 10px;
   width: 100px;
+}
+
+
+.box{
+  width: 70px;
+  height: 70px;
+  background-color:#DF6951;
+  color: #080809;
+  /* border: 1px solid ; */
+  /* border-bottom-left-radius: 20px; */
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+position: absolute;
+z-index: -1;
+transform: translate(-40px, -20px);
+opacity: 0;
+}
+.box:hover{
+  cursor: pointer;
 }
 .destination {
   margin-top: 2rem;
@@ -658,6 +678,7 @@ margin: 0 6rem;
 .subscribe a img{
   position: absolute;
   right: 75px;
+  z-index: 1;
 }
 .subscribe form{
   padding-top: 2rem;
@@ -709,13 +730,10 @@ footer{
   justify-content: center;
   gap: 2rem;
   align-items: center;
-  /* align-items: flex-start; */
+
 }
 .footerlogo h2{
   font-weight: 100;
-  /* font-size: 62px; */
-
-
 }
 .footerLinks p{
   font-size: 13px;
@@ -725,7 +743,7 @@ footer{
 .links ul{
   display: flex;
   flex-direction: column;
-  /* display: none; */
+
 }
 .links ul li:nth-child(1){
   /* display: none; */
@@ -757,23 +775,6 @@ footer span{
   text-align: center;
   display: block;
   padding-top: 2rem;
-}
-.box{
-  width: 70px;
-  height: 70px;
-  background-color:#DF6951;
-  color: #080809;
-  /* border: 1px solid ; */
-  /* border-bottom-left-radius: 20px; */
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-border-bottom-right-radius: 10px;
-position: absolute;
-z-index: -1;
-transform: translate(-40px, -20px);
-opacity: 1;
-}
-.box:hover{
-  cursor: pointer;
+
 
 }

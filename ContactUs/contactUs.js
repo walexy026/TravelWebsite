@@ -78,7 +78,9 @@ let textContent = textArea.addEventListener('keyup',() =>{
  submitButton.addEventListener('click', () =>{
     let submitButton = document.getElementById('submit')
     if(!fName || !mail || !textContent ){
+        errorSubmit.style.display ='block'
         errorSubmit.innerHTML ='Please fix error to submit';
+        setTimeout(function(){ errorSubmit.style.display ='none', 5000;})
         return false;
     }
  })
