@@ -127,6 +127,9 @@
         <div class="destinationText">
           <h6>Top Selling</h6>
           <h3>Top Destinations</h3>
+          <div class="sketches"> 
+          <img src="./Assets/roughSketch.svg" alt="roughSketch">
+          </div>
         </div>
         <div class="destinationCities">
           <div class="cities">
@@ -162,9 +165,6 @@
               <p>28 Days Trip</p>
             </span>
           </div>
-          <!-- <div class="sketches">  -->
-          <!-- <img src="./Assets/roughSketch.svg" alt=""> -->
-          <!-- </div> -->
         </div>
       </section>
       <section class="stepsToBook">
@@ -241,9 +241,9 @@
           <h5>Testimonials</h5>
           <h2>What people say
             about Us.</h2>
-            <div class="carouselDot"></div>
-            <div class="carouselDot"></div>
-            <div class="carouselDot"></div>
+            <div class="carouselDot" onclick="currentSlide(1)"> </div>
+            <div class= "carouselDot" onclick="currentSlide(2)"></div>
+            <div class="carouselDot" onclick="currentSlide(3)"></div>
         </div>
         <div>
           <div class="carouselTestimony carouselTestimony__visible">
@@ -254,20 +254,20 @@
           </div>
           <div class="carouselTestimony carouselTestimony__hidden">
             <img src="./Assets/ImageTestimonial.svg" alt="ImageTestimonial">
-            <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
+            <p>“Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deserunt tempore ducimus unde aperiam ullam maiores inventore nesciunt nam consequuntur mollitia nostrum doloribus ad soluta, porro necessitatibus perferendis architecto dicta.”</p>
             <h6>Mike taylor</h6>
             <h6>Lahore, Pakistan</h6>
           </div>
           <div class="carouselTestimony carouselTestimony__hidden">
             <img src="./Assets/ImageTestimonial.svg" alt="ImageTestimonial">
-            <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
+            <p>“Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ab natus laudantium consequatur ipsam ex..”</p>
             <h6>Mike taylor</h6>
             <h6>Lahore, Pakistan</h6>
           </div>
           <div class="arrow">
-            <img class="arrowUp" src="./Assets/arrowUp.svg" alt="arrowUp">
+            <img class="arrowUp" onclick="plusSlides(-1)" src="./Assets/arrowUp.svg" alt="arrowUp">
             <img class="
-            arrowDown" src="./Assets/arrowDown.svg" alt="arrowDown">
+            arrowDown" onclick="plusSlides(1)" src="./Assets/arrowDown.svg" alt="arrowDown">
           </div>
         </div>
       </section>

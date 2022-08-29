@@ -38,50 +38,78 @@ hamburger.addEventListener('click', () => {
  
 // Carousel
 
-let carouselDiv = document.getElementsByClassName('carouselTestimony')
-let arrowNavUp = document.querySelector('.arrowUp')
-let arrowNavDown = document.querySelector('.arrowDown')
-let carouselDot = document.querySelectorAll('.carouselDot')
-// console.log(carouselDot)
-let carouselPosition = 0
-let carouselTotal = carouselDiv.length
+// let carouselDiv = document.getElementsByClassName('carouselTestimony')
+// let arrowNavUp = document.querySelector('.arrowUp')
+// let arrowNavDown = document.querySelector('.arrowDown')
+// let carouselDot = document.querySelectorAll('.carouselDot')
+// // console.log(carouselDot)
+// let carouselPosition = 0
+// let carouselTotal = carouselDiv.length
 
 
-arrowNavUp.addEventListener('click', function(){
-nextSlide()
-})
-arrowNavDown.addEventListener('click', function(){
-prevSlide()
-})
-function updateSlides(){
-    for( let carouselDivs of carouselDiv){
-carouselDivs.classList.add('carouselTestimony__visible')
-carouselDivs.classList.remove('carouselTestimony__hidden')
-    }
-    carouselDiv[carouselPosition].classList.add('carouselTestimony__visible')
+// arrowNavUp.addEventListener('click', function(){
+// nextSlide()
+// })
+// arrowNavDown.addEventListener('click', function(){
+// prevSlide()
+// })
+// function updateSlides(){
+//     for( let carouselDivs of carouselDiv){
+// carouselDivs.classList.add('carouselTestimony__visible')
+// carouselDivs.classList.remove('carouselTestimony__hidden')
+//     }
+//     carouselDiv[carouselPosition].classList.add('carouselTestimony__visible')
+// }
+// function nextSlide() {
+//     if (carouselPosition === carouselTotal -1){
+//         carouselPosition = 0
+//     }else{
+//         carouselPosition++
+//     }
+//     updateSlides()
+// }
+
+
+
+// function prevSlide(){
+//     console.log(prevSlide())
+//     if (carouselPosition === carouselTotal){
+//         carouselPosition = 0
+//     }else{
+//         carouselPosition--
+//     }
+//     updateSlides()
+// }
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
-function nextSlide() {
-    if (carouselPosition === carouselTotal -1){
-        carouselPosition = 0
-    }else{
-        carouselPosition++
-    }
-    updateSlides()
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
+function showSlides(n) {
+  var i;
+//   var slides = document.getElementsByClassName("mySlides");
+  var carouselDiv = document.getElementsByClassName('carouselTestimony')
+ let carouselDot = document.querySelectorAll('.carouselDot')
+//  var dots = document.getElementsByClassName("dot");
 
-
-function prevSlide(){
-    console.log(prevSlide())
-    if (carouselPosition === carouselTotal){
-        carouselPosition = 0
-    }else{
-        carouselPosition--
-    }
-    updateSlides()
+  if (n > carouselDiv.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = carouselDiv.length}
+  for (i = 0; i < carouselDiv.length; i++) {
+    carouselDiv[i].style.display = "none";  
+  }
+  for (i = 0; i < carouselDot.length; i++) {
+    carouselDot[i].className = carouselDot[i].className.replace(" active", "");
+  }
+  carouselDiv[slideIndex-1].style.display = "block";  
+  carouselDot[slideIndex-1].className += " active";
 }
-
-
 
 
 
