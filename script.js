@@ -36,14 +36,88 @@ hamburger.addEventListener('click', () => {
     })
  }
  
-//  boxHover.style.opacity = '0.5'
+// Carousel
 
-// const any = 1
-// console.log(any)
+let carouselDiv = document.getElementsByClassName('carouselTestimony')
+let arrowNavUp = document.querySelector('.arrowUp')
+let arrowNavDown = document.querySelector('.arrowDown')
+let carouselDot = document.querySelectorAll('.carouselDot')
+// console.log(carouselDot)
+let carouselPosition = 0
+let carouselTotal = carouselDiv.length
+
+
+arrowNavUp.addEventListener('click', function(){
+nextSlide()
+})
+arrowNavDown.addEventListener('click', function(){
+prevSlide()
+})
+function updateSlides(){
+    for( let carouselDivs of carouselDiv){
+carouselDivs.classList.add('carouselTestimony__visible')
+carouselDivs.classList.remove('carouselTestimony__hidden')
+    }
+    carouselDiv[carouselPosition].classList.add('carouselTestimony__visible')
+}
+function nextSlide() {
+    if (carouselPosition === carouselTotal -1){
+        carouselPosition = 0
+    }else{
+        carouselPosition++
+    }
+    updateSlides()
+}
+
+
+
+function prevSlide(){
+    console.log(prevSlide())
+    if (carouselPosition === carouselTotal){
+        carouselPosition = 0
+    }else{
+        carouselPosition--
+    }
+    updateSlides()
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+// arrowNavUp.addEventListener('click', function(){
+   
+//     if (carouselPosition === carouselTotal - 1){
+//         carouselPosition = 0
+//     }else carouselPosition ++
+//     // for (let carouselDivs of carouselDiv){
+//         for(let i = 0; i < carouselTotal; i++){
+//             carouselDiv[i].classList.add("carouselTestimony__visible")
+//             carouselDiv[i].classList.remove("carouselTestimony__hidden" )
+//     }
+//     // carouselDiv[].classList.add('carouselTestimony__visible')
+// })
+
+// arrowNavDown.addEventListener('click', () => {
+//     console.log('helloooo next')
+//     if (carouselPosition === 0){
+//         carouselPosition = carouselDiv -1
+//     }else carouselPosition --
+//     // for (let carouselDivs of carouselDiv){
+//         for(let i = 0; i < carouselDiv.length; i++){
+//             carouselDiv[i].classList.remove("carouselTestimony__hidden" )
+//             carouselDiv[i].classList.add("carouselTestimony__visible")
+//     }
+//     carouselDiv[i].classList.remove('carouselTestimony__visible')
+// })
 
 
 
