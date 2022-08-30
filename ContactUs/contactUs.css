@@ -107,10 +107,7 @@ span{
   .flName{
     flex-direction: column;
   }
-  form p {
-    /* width: 350px; */
-   
-  }
+  
 }
 @media screen and (max-width:670px) {
   form{
@@ -125,19 +122,16 @@ span{
     right: 20px;
     margin: 1rem;
   }
-  form p {
-    /* width: 250px; */
-   
-  }
+  
   textarea{
     width: 100%;
   }  
   .flName{
     flex-direction: column;
   }
-  input[type="submit"]{
-    /* transform: translateX(73px); */
-  }
+  /* input[type="submit"]{
+    transform: translateX(73px);
+  } */
   input[type="text"]{
 width: 100%;
   }
