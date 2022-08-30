@@ -34,6 +34,7 @@ let form = idGroup('form'),
 // errorTextArea.innerHTML = 'Text cannot be blank'
 // }
 // })
+
 let fName = fullName.addEventListener('keyup',() =>{
     let fullName = document.getElementById('FullName').value;    
     if (fullName.length ==   0){
@@ -43,7 +44,7 @@ let fName = fullName.addEventListener('keyup',() =>{
     if (!fullName.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
         errorName.innerHTML = 'write full name';
         return false
-    }
+    }else
      errorName.innerHTML = 'correct'
     return true
     
@@ -71,6 +72,10 @@ let textContent = textArea.addEventListener('keyup',() =>{
                errorTextArea.innerHTML = left    +   ' more characters is required'
                return false
                } 
+               if( left > 250){
+                errorTextArea.innerHTML = left + ' number exceeeded'
+                return false
+               }
                errorTextArea.innerHTML = 'correct';
             return true
  })
