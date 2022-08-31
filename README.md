@@ -20,6 +20,11 @@
 
 ![](/Assets/Jadoo_Landing_Page.png)
 
+![](/Assets/serviceSection.png)
+![](/Assets/destinationSection.png)
+![](/Assets/carouseltestimony.png)
+![](/Assets/footerScreenshot.png)
+
 ### Links
 - [Github URL](https://github.com/walexy026/TravelWebsite "Github Repository")
 
@@ -43,7 +48,7 @@
 
 
 ### Continued development
-``` There is still lots of things to learn in JavaScript, as this is first major language of a frontend developer```
+ 💡```There is still lots of things to learn in JavaScript, as this is first major language of a frontend developer```
 
 
 ### Useful resources

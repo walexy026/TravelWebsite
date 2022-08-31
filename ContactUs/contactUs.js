@@ -1,3 +1,4 @@
+// storing varaible inside a function so that i can reuse it 
 let idGroup = (idGroup) => document.getElementById(idGroup);
 let form = idGroup('form'),
  fullName = idGroup('FullName'),
@@ -19,22 +20,7 @@ let form = idGroup('form'),
 // const errorSubmit =document.getElementById('errorSubmit')
 
 
-// console.log(form)
-// errorSubmit.innerHTML ="the dom is nice"
-// form.addEventListener('click', (e)=>{
-// e.preventDefault();
-// if (fullName.value === ''){
-// errorName.innerHTML = 'name cannot be blank'
-// return false
-// }
-// if (Email.value === ''){
-// errorEmail.innerHTML = 'Email cannot be blank'
-// }
-// if (textArea.value === ''){
-// errorTextArea.innerHTML = 'Text cannot be blank'
-// }
-// })
-
+// Validating the form
 let fName = fullName.addEventListener('keyup',() =>{
     let fullName = document.getElementById('FullName').value;    
     if (fullName.length ==   0){
@@ -51,7 +37,7 @@ let fName = fullName.addEventListener('keyup',() =>{
 } )
 let mail = Email.addEventListener('keyup',() =>{
         let Email = document.getElementById('Email').value;
-           
+        //    determine whether certain conditions are met
            if (Email.length == 0){
                errorEmail.innerHTML = 'Email is required'
                return false
@@ -67,7 +53,7 @@ let textContent = textArea.addEventListener('keyup',() =>{
         let textArea = document.getElementById('textarea').value;
         let required = 250;
         let left = required - textArea.length;
-           
+        //    Used to determine the numbers to characters left
            if (left > 0){
                errorTextArea.innerHTML = left    +   ' more characters is required'
                return false
@@ -79,7 +65,7 @@ let textContent = textArea.addEventListener('keyup',() =>{
                errorTextArea.innerHTML = 'correct';
             return true
  })
-        
+// Activating the button        
  submitButton.addEventListener('click', () =>{
     let submitButton = document.getElementById('submit')
     if(!fName || !mail || !textContent ){
