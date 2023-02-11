@@ -159,7 +159,7 @@ select {
 }
 /* ::after IS USED TO PUT ADD AN ELEMENT  */
 .heroSubOne h1 span::after {
-  content: url(/Assets/DecoreH1.svg);
+  content: url(./Assets/DecoreH1.svg);
   position: absolute;
   transform: translateX(-160px);
   padding-top: 10px;
